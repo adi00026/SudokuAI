@@ -26,6 +26,7 @@ Each individual square 31 units wide, while the entire grid 281 units wide. Were
 Anyone who has solved a Sudoku puzzle before knows that the easiest way to solve one is to use a process of elimination to find each square's value. Each square is part of a row, column and a collection of nine squares. In simpler puzzles, you can use the values of the other squares in the same row, column or collection to determine a square's value. Peter Norvig summarizes this algorithm in two lines: 
 
  >(1) If a square has only one possible value, then eliminate that value from the square's peers. 
+ 
  >(2) If a unit has only one possible place for a value, then put the value there.
 
 This works fine for simpler puzzles, but not for harder ones. For harder puzzles, this method works up to a point. After that you have to guess a solution for a square and keep working until either:
@@ -53,7 +54,28 @@ The bot runs on Python 2.7 and needs the PIL and pyautogui libraries.
 
 ###### Installing
 
-You only need the 
+You only need the `sudoku.py` file to run the bot. All the code is contained there. So either download the file or clone the repository to get started.
+
+###### Running
+
+Go to www.websudoku.com and choose your level. You must ensure that the top left corner of the grid is at (635, 305). Nine times out of ten this is where it'll be but I've noticed that the site changes the location of the grid from time to time. For anyone using a MacBook, you can make sure of this by pressing Shift-Command-4, and navigating the cursor to the top left corner. If you're using a MacBook, ensure you've maximised the screen.
+
+Then run:
+
+`python sudoku.py` 
+
+As soon as you run this, you must switch back to the game screen. The bot will begin scanning the screen, and in order to do this your screen must have the game on it.
+
+After about 30 seconds, you'll start to see the squares being filled in!
+
+
+## Demonstration
+
+I made a short video to demonstrate the working of the bot.
+
+
 
 ## Acknowledgements
+
+I'd like to thank Peter Norvig, whose writing gave me the inspiration to make this bot and for summarizing the algorithm to solve any puzzle.
 

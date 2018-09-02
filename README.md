@@ -36,6 +36,7 @@ This works fine for simpler puzzles, but not for harder ones. For harder puzzles
 My bot first tries solving the puzzle using the first method. This is called *constraint propogation.* We're reducing the domain of each square, and *propogating* that information to other squares in the grid. 
 
 www.websudoku.com has 4 levels:
+
    ![screenshot](https://github.com/adi00026/SudokuAI/blob/master/levels.png)
 
 Most easy and medium puzzles can be solved by constraint propogation.

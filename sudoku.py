@@ -258,7 +258,6 @@ if __name__ == '__main__':
 	if len(cmdline) == 1:
 		if solved(sudoku) == 81:
 			fillIn(sudoku)
-			# time.sleep(1)
 			pyautogui.goto(660,660)
 		else:
 			fillIn(search(sudoku))

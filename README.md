@@ -45,5 +45,15 @@ Hard and evil puzzles however, require you to guess a solution for a square and 
 
 I've done my best to make my code easy to follow along. I've commented what each function and variable is used for. Feel free to have a look!
 
+## Running the bot
+
+###### Prerequisites
+
+The bot runs on Python 2.7 and needs the PIL and pyautogui libraries.
+
+###### Installing
+
+You only need the 
+
 ## Acknowledgements
 

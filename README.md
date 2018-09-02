@@ -46,17 +46,19 @@ Hard and evil puzzles however, require you to guess a solution for a square and 
 
 I've done my best to make my code easy to follow along. I've commented what each function and variable is used for. Feel free to have a look!
 
-## Running the bot
+## Installing
 
 ###### Prerequisites
 
 The bot runs on Python 2.7 and needs the PIL and pyautogui libraries.
 
-###### Installing
-
 You only need the `sudoku.py` file to run the bot. All the code is contained there. So either download the file or clone the repository to get started.
 
-###### Running
+## Running the bot
+
+There are multiple ways you can run this bot.
+
+###### www.websudoku.com
 
 Go to www.websudoku.com and choose your level. You must ensure that the top left corner of the grid is at (635, 305). Nine times out of ten this is where it'll be but I've noticed that the site changes the location of the grid from time to time. For anyone using a MacBook, you can make sure of this by pressing Shift-Command-4, and navigating the cursor to the top left corner. If you're using a MacBook, ensure you've maximised the screen.
 
@@ -68,11 +70,23 @@ As soon as you run this, you must switch back to the game screen. The bot will b
 
 After about 30 seconds, you'll start to see the squares being filled in!
 
+###### Command line version
+
+You can also feed a grid as a string and run it like this:
+
+`python sudoku.py "4.....8.5.3..........7......2.....6.....8.4......1.......6.3.7.5..2.....1.4......" `
+
+It will print the grid in the terminal.
+
+You can also feed a text file with the grid, like this:
+
+`python sudoku.py -f grid.txt`
+
+There's a `grid.txt` file in this repository you can use to try it out.
 
 ## Demonstration
 
 I made a short video to demonstrate the working of the bot.
-
 
 
 ## Acknowledgements

@@ -1,6 +1,9 @@
 # SudokuAI
 A bot that solves any sudoku puzzle on https://www.websudoku.com/
 
+Watch it in action here: https://www.youtube.com/watch?v=zqfCHxAwNmE
+
+
 ## How it works
 
 SudokuAI is a bot that can solve any sudoku puzzle on https://www.websudoku.com/
